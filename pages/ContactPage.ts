@@ -4,7 +4,7 @@ export class ContactPage {
   constructor(private page: Page) {}
 
   async navigate() {
-    await this.page.goto("/#/contact");
+    await this.page.goto("https://automationintesting.online/#/contact");
   }
 
   async fillForm({ name, email, phone, subject, description }) {

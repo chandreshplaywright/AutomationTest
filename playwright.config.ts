@@ -1,11 +1,13 @@
-import { defineConfig } from "@playwright/test";
+import type { PlaywrightTestConfig } from "@playwright/test";
 
-export default defineConfig({
+const config: PlaywrightTestConfig = {
+  testDir: "./tests",
   use: {
     baseURL: "https://automationintesting.online",
     headless: true,
     screenshot: "only-on-failure",
     video: "retain-on-failure",
   },
-  testDir: "./tests",
-});
+};
+
+export default config;
