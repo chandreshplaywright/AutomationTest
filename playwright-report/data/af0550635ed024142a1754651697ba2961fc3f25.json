@@ -1,0 +1,90 @@
+{
+  "fileId": "af0550635ed024142a1754651697ba2961fc3f25",
+  "fileName": "non functional tests/navigationPerf.spec.ts",
+  "tests": [
+    {
+      "testId": "af0550635ed024142a1754651697ba2961fc3f25-69be7f9680014cc39519db07a9e2c00f0e749baf",
+      "title": "basic performance navigation",
+      "projectName": "",
+      "location": {
+        "file": "non functional tests/navigationPerf.spec.ts",
+        "line": 3,
+        "column": 5
+      },
+      "duration": 805,
+      "outcome": "expected",
+      "path": [
+        "non functional tests/navigationPerf.spec.ts:3"
+      ],
+      "results": [
+        {
+          "duration": 805,
+          "startTime": "2025-07-10T23:35:10.474Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2025-07-10T23:35:10.474Z",
+              "duration": 40,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2025-07-10T23:35:10.477Z",
+                  "duration": 37,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(https://automationintesting.online)",
+              "startTime": "2025-07-10T23:35:10.514Z",
+              "duration": 615,
+              "snippet": " \u001b[90m  3 |\u001b[39m test(\u001b[32m\"basic performance navigation\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  4 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://automationintesting.online\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m  5 |\u001b[39m",
+              "steps": [],
+              "location": {
+                "file": "non functional tests/navigationPerf.spec.ts",
+                "line": 4,
+                "column": 14
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2025-07-10T23:35:11.129Z",
+              "duration": 11,
+              "snippet": " \u001b[90m  5 |\u001b[39m\n \u001b[90m  6 |\u001b[39m   \u001b[36mconst\u001b[39m navigationTimingJson \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                                          ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m  7 |\u001b[39m     \u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify(performance\u001b[33m.\u001b[39mgetEntriesByType(\u001b[32m\"navigation\"\u001b[39m))",
+              "steps": [],
+              "location": {
+                "file": "non functional tests/navigationPerf.spec.ts",
+                "line": 6,
+                "column": 43
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2025-07-10T23:35:11.142Z",
+              "duration": 137,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2025-07-10T23:35:11.254Z",
+                  "duration": 24,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": [
+            {
+              "name": "stdout",
+              "contentType": "text/plain",
+              "body": "[\n  {\n    name: \u001b[32m'https://automationintesting.online/'\u001b[39m,\n    entryType: \u001b[32m'navigation'\u001b[39m,\n    startTime: \u001b[33m0\u001b[39m,\n    duration: \u001b[33m610.8000000007451\u001b[39m,\n    initiatorType: \u001b[32m'navigation'\u001b[39m,\n    nextHopProtocol: \u001b[32m'h2'\u001b[39m,\n    workerStart: \u001b[33m0\u001b[39m,\n    redirectStart: \u001b[33m0\u001b[39m,\n    redirectEnd: \u001b[33m0\u001b[39m,\n    fetchStart: \u001b[33m0.30000000074505806\u001b[39m,\n    domainLookupStart: \u001b[33m1.1000000014901161\u001b[39m,\n    domainLookupEnd: \u001b[33m68.69999999925494\u001b[39m,\n    connectStart: \u001b[33m68.69999999925494\u001b[39m,\n    connectEnd: \u001b[33m88.10000000149012\u001b[39m,\n    secureConnectionStart: \u001b[33m75.40000000223517\u001b[39m,\n    requestStart: \u001b[33m88.19999999925494\u001b[39m,\n    responseStart: \u001b[33m320.9000000022352\u001b[39m,\n    responseEnd: \u001b[33m321.9000000022352\u001b[39m,\n    transferSize: \u001b[33m3023\u001b[39m,\n    encodedBodySize: \u001b[33m2723\u001b[39m,\n    decodedBodySize: \u001b[33m8934\u001b[39m,\n    serverTiming: [],\n    workerTiming: [],\n    unloadEventStart: \u001b[33m0\u001b[39m,\n    unloadEventEnd: \u001b[33m0\u001b[39m,\n    domInteractive: \u001b[33m400\u001b[39m,\n    domContentLoadedEventStart: \u001b[33m400.19999999925494\u001b[39m,\n    domContentLoadedEventEnd: \u001b[33m400.19999999925494\u001b[39m,\n    domComplete: \u001b[33m610.8000000007451\u001b[39m,\n    loadEventStart: \u001b[33m610.8000000007451\u001b[39m,\n    loadEventEnd: \u001b[33m610.8000000007451\u001b[39m,\n    type: \u001b[32m'navigate'\u001b[39m,\n    redirectCount: \u001b[33m0\u001b[39m\n  }\n]\n"
+            }
+          ]
+        }
+      ],
+      "ok": true
+    }
+  ]
+}

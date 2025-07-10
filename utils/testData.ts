@@ -16,3 +16,13 @@ export const contactFormData = {
   description: "Is breakfast included?",
   successMessage: "Thanks for getting in touch",
 };
+
+export const invalidBookingData = {
+  firstname: "John",
+  lastname: "Doe",
+  email: "john@example.com",
+  phoneInvalid: "12345678",
+  checkInDate: "04/09/2025",
+  checkOutDate: "08/09/2025",
+  failureMessage: "size must be between 11 and 21",
+};

@@ -1,53 +1,69 @@
 {
   "files": [
     {
-      "fileId": "430f0b17ff9f6d8fdc104761187b97f8f9274a76",
-      "fileName": "booking.spec.ts",
+      "fileId": "c9f32d97ceba7708dab0eced335e382970211b34",
+      "fileName": "functional tests/booking.spec.ts",
       "tests": [
         {
-          "testId": "430f0b17ff9f6d8fdc104761187b97f8f9274a76-f90b746f2cff1befda535f722e59e57855190318",
-          "title": "Book a room using shared data and selectors",
+          "testId": "c9f32d97ceba7708dab0eced335e382970211b34-426b79d689ddca93d534aaba09cf1be7cc14b969",
+          "title": "Book a room",
           "projectName": "",
           "location": {
-            "file": "booking.spec.ts",
+            "file": "functional tests/booking.spec.ts",
             "line": 5,
             "column": 5
           },
-          "duration": 33428,
-          "outcome": "unexpected",
+          "duration": 4155,
+          "outcome": "expected",
           "path": [
-            "booking.spec.ts:5"
+            "functional tests/booking.spec.ts:5"
           ],
-          "ok": false
+          "ok": true
+        },
+        {
+          "testId": "c9f32d97ceba7708dab0eced335e382970211b34-3891e3295ec4e04c490b7adec0cf06021dec7e09",
+          "title": "Invalid phone number",
+          "projectName": "",
+          "location": {
+            "file": "functional tests/booking.spec.ts",
+            "line": 17,
+            "column": 5
+          },
+          "duration": 3457,
+          "outcome": "expected",
+          "path": [
+            "functional tests/booking.spec.ts:17"
+          ],
+          "ok": true
         }
       ],
       "stats": {
-        "total": 1,
-        "expected": 0,
-        "unexpected": 1,
+        "total": 2,
+        "expected": 2,
+        "unexpected": 0,
         "flaky": 0,
         "skipped": 0,
-        "ok": false,
-        "duration": 33428
+        "ok": true,
+        "duration": 7612
       }
     },
     {
-      "fileId": "46c368fd93f39822434dc47e0053f21ea481e06f",
-      "fileName": "contact.spec.ts",
+      "fileId": "460902db7eabeecf1b8b7351ff78ef83458812ca",
+      "fileName": "functional tests/contact.spec.ts",
       "tests": [
         {
-          "testId": "46c368fd93f39822434dc47e0053f21ea481e06f-0f5e325ee38bbca24d571389ead312a8befdc628",
-          "title": "Submit contact form using shared data and selectors",
+          "testId": "460902db7eabeecf1b8b7351ff78ef83458812ca-f7e881b12b80d2f43650b991996687566ec33afd",
+          "title": "Submit contact form",
           "projectName": "",
           "location": {
-            "file": "contact.spec.ts",
+            "file": "functional tests/contact.spec.ts",
             "line": 5,
             "column": 5
           },
-          "duration": 2029,
+          "duration": 2290,
           "outcome": "expected",
           "path": [
-            "contact.spec.ts:5"
+            "functional tests/contact.spec.ts:5"
           ],
           "ok": true
         }
@@ -59,26 +75,26 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 2029
+        "duration": 2290
       }
     },
     {
-      "fileId": "27b770defe4ea4660d266e27caab768f6243f0c3",
-      "fileName": "HomePerf.spec.ts",
+      "fileId": "2a40afe501ed5da183949b8dfb74c675740bcb0a",
+      "fileName": "non functional tests/homePerf.spec.ts",
       "tests": [
         {
-          "testId": "27b770defe4ea4660d266e27caab768f6243f0c3-656736e68b6f62bd240f133b75351eb555b9ae47",
+          "testId": "2a40afe501ed5da183949b8dfb74c675740bcb0a-656736e68b6f62bd240f133b75351eb555b9ae47",
           "title": "Check homepage performance",
           "projectName": "",
           "location": {
-            "file": "HomePerf.spec.ts",
+            "file": "non functional tests/homePerf.spec.ts",
             "line": 3,
             "column": 5
           },
-          "duration": 884,
+          "duration": 781,
           "outcome": "expected",
           "path": [
-            "HomePerf.spec.ts:3"
+            "non functional tests/homePerf.spec.ts:3"
           ],
           "ok": true
         }
@@ -90,7 +106,69 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 884
+        "duration": 781
+      }
+    },
+    {
+      "fileId": "af0550635ed024142a1754651697ba2961fc3f25",
+      "fileName": "non functional tests/navigationPerf.spec.ts",
+      "tests": [
+        {
+          "testId": "af0550635ed024142a1754651697ba2961fc3f25-69be7f9680014cc39519db07a9e2c00f0e749baf",
+          "title": "basic performance navigation",
+          "projectName": "",
+          "location": {
+            "file": "non functional tests/navigationPerf.spec.ts",
+            "line": 3,
+            "column": 5
+          },
+          "duration": 805,
+          "outcome": "expected",
+          "path": [
+            "non functional tests/navigationPerf.spec.ts:3"
+          ],
+          "ok": true
+        }
+      ],
+      "stats": {
+        "total": 1,
+        "expected": 1,
+        "unexpected": 0,
+        "flaky": 0,
+        "skipped": 0,
+        "ok": true,
+        "duration": 805
+      }
+    },
+    {
+      "fileId": "85a28ac6f674e732d114f9cca3f3cabc70e9f84b",
+      "fileName": "non functional tests/NavigationPerf.spec.ts",
+      "tests": [
+        {
+          "testId": "85a28ac6f674e732d114f9cca3f3cabc70e9f84b-69be7f9680014cc39519db07a9e2c00f0e749baf",
+          "title": "basic performance navigation",
+          "projectName": "",
+          "location": {
+            "file": "non functional tests/NavigationPerf.spec.ts",
+            "line": 3,
+            "column": 5
+          },
+          "duration": 762,
+          "outcome": "expected",
+          "path": [
+            "non functional tests/NavigationPerf.spec.ts:3"
+          ],
+          "ok": true
+        }
+      ],
+      "stats": {
+        "total": 1,
+        "expected": 1,
+        "unexpected": 0,
+        "flaky": 0,
+        "skipped": 0,
+        "ok": true,
+        "duration": 762
       }
     }
   ],
@@ -98,12 +176,12 @@
     ""
   ],
   "stats": {
-    "total": 3,
-    "expected": 2,
-    "unexpected": 1,
+    "total": 6,
+    "expected": 6,
+    "unexpected": 0,
     "flaky": 0,
     "skipped": 0,
-    "ok": false,
-    "duration": 36341
+    "ok": true,
+    "duration": 12250
   }
 }

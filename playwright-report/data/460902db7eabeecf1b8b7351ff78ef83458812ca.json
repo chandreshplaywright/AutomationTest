@@ -1,44 +1,44 @@
 {
-  "fileId": "46c368fd93f39822434dc47e0053f21ea481e06f",
-  "fileName": "contact.spec.ts",
+  "fileId": "460902db7eabeecf1b8b7351ff78ef83458812ca",
+  "fileName": "functional tests/contact.spec.ts",
   "tests": [
     {
-      "testId": "46c368fd93f39822434dc47e0053f21ea481e06f-0f5e325ee38bbca24d571389ead312a8befdc628",
-      "title": "Submit contact form using shared data and selectors",
+      "testId": "460902db7eabeecf1b8b7351ff78ef83458812ca-f7e881b12b80d2f43650b991996687566ec33afd",
+      "title": "Submit contact form",
       "projectName": "",
       "location": {
-        "file": "contact.spec.ts",
+        "file": "functional tests/contact.spec.ts",
         "line": 5,
         "column": 5
       },
-      "duration": 2029,
+      "duration": 2290,
       "outcome": "expected",
       "path": [
-        "contact.spec.ts:5"
+        "functional tests/contact.spec.ts:5"
       ],
       "results": [
         {
-          "duration": 2029,
-          "startTime": "2025-07-10T12:54:39.168Z",
+          "duration": 2290,
+          "startTime": "2025-07-10T23:35:07.399Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2025-07-10T12:54:39.169Z",
-              "duration": 269,
+              "startTime": "2025-07-10T23:35:07.399Z",
+              "duration": 38,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2025-07-10T12:54:39.386Z",
-                  "duration": 52,
+                  "startTime": "2025-07-10T23:35:07.402Z",
+                  "duration": 34,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/#/contact)",
-              "startTime": "2025-07-10T12:54:39.440Z",
-              "duration": 681,
+              "startTime": "2025-07-10T23:35:07.438Z",
+              "duration": 547,
               "snippet": " \u001b[90m  7 |\u001b[39m   \u001b[36masync\u001b[39m navigate() {\n \u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m\"/#/contact\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m  9 |\u001b[39m   }",
               "steps": [],
               "location": {
@@ -49,8 +49,8 @@
             },
             {
               "title": "page.fill(#name)",
-              "startTime": "2025-07-10T12:54:40.123Z",
-              "duration": 445,
+              "startTime": "2025-07-10T23:35:07.986Z",
+              "duration": 523,
               "snippet": " \u001b[90m 11 |\u001b[39m   \u001b[36masync\u001b[39m fillForm({ name\u001b[33m,\u001b[39m email\u001b[33m,\u001b[39m phone\u001b[33m,\u001b[39m subject\u001b[33m,\u001b[39m description }) {\n \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#name\"\u001b[39m\u001b[33m,\u001b[39m name)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#email\"\u001b[39m\u001b[33m,\u001b[39m email)\u001b[33m;\u001b[39m",
               "steps": [],
               "location": {
@@ -61,8 +61,8 @@
             },
             {
               "title": "page.fill(#email)",
-              "startTime": "2025-07-10T12:54:40.569Z",
-              "duration": 56,
+              "startTime": "2025-07-10T23:35:08.509Z",
+              "duration": 68,
               "snippet": " \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#name\"\u001b[39m\u001b[33m,\u001b[39m name)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#email\"\u001b[39m\u001b[33m,\u001b[39m email)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#phone\"\u001b[39m\u001b[33m,\u001b[39m phone)\u001b[33m;\u001b[39m",
               "steps": [],
               "location": {
@@ -73,8 +73,8 @@
             },
             {
               "title": "page.fill(#phone)",
-              "startTime": "2025-07-10T12:54:40.626Z",
-              "duration": 53,
+              "startTime": "2025-07-10T23:35:08.578Z",
+              "duration": 12,
               "snippet": " \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#email\"\u001b[39m\u001b[33m,\u001b[39m email)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#phone\"\u001b[39m\u001b[33m,\u001b[39m phone)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#subject\"\u001b[39m\u001b[33m,\u001b[39m subject)\u001b[33m;\u001b[39m",
               "steps": [],
               "location": {
@@ -85,8 +85,8 @@
             },
             {
               "title": "page.fill(#subject)",
-              "startTime": "2025-07-10T12:54:40.680Z",
-              "duration": 18,
+              "startTime": "2025-07-10T23:35:08.591Z",
+              "duration": 17,
               "snippet": " \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#phone\"\u001b[39m\u001b[33m,\u001b[39m phone)\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#subject\"\u001b[39m\u001b[33m,\u001b[39m subject)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#description\"\u001b[39m\u001b[33m,\u001b[39m description)\u001b[33m;\u001b[39m",
               "steps": [],
               "location": {
@@ -97,8 +97,8 @@
             },
             {
               "title": "page.fill(#description)",
-              "startTime": "2025-07-10T12:54:40.698Z",
-              "duration": 17,
+              "startTime": "2025-07-10T23:35:08.608Z",
+              "duration": 19,
               "snippet": " \u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#subject\"\u001b[39m\u001b[33m,\u001b[39m subject)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#description\"\u001b[39m\u001b[33m,\u001b[39m description)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 17 |\u001b[39m   }",
               "steps": [],
               "location": {
@@ -109,8 +109,8 @@
             },
             {
               "title": "page.click(text=submit)",
-              "startTime": "2025-07-10T12:54:40.716Z",
-              "duration": 162,
+              "startTime": "2025-07-10T23:35:08.628Z",
+              "duration": 770,
               "snippet": " \u001b[90m 19 |\u001b[39m   \u001b[36masync\u001b[39m submitForm() {\n \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m\"text=submit\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 21 |\u001b[39m   }",
               "steps": [],
               "location": {
@@ -121,8 +121,8 @@
             },
             {
               "title": "expect.toBeVisible",
-              "startTime": "2025-07-10T12:54:40.879Z",
-              "duration": 146,
+              "startTime": "2025-07-10T23:35:09.398Z",
+              "duration": 166,
               "snippet": " \u001b[90m 25 |\u001b[39m       \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m`text=${contactFormData.successMessage}`\u001b[39m)\n \u001b[90m 26 |\u001b[39m     )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m      ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 27 |\u001b[39m   }",
               "steps": [],
               "location": {
@@ -133,13 +133,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2025-07-10T12:54:41.025Z",
-              "duration": 173,
+              "startTime": "2025-07-10T23:35:09.564Z",
+              "duration": 126,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2025-07-10T12:54:41.143Z",
-                  "duration": 54,
+                  "startTime": "2025-07-10T23:35:09.649Z",
+                  "duration": 40,
                   "steps": []
                 }
               ]

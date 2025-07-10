@@ -1,5 +1,5 @@
 import { Page, expect } from "@playwright/test";
-import { bookingData } from "../utils/testData";
+import { bookingData, invalidBookingData } from "../utils/testData";
 
 export class BookingPage {
   constructor(private page: Page) {}
@@ -23,6 +23,18 @@ export class BookingPage {
     await this.page.click("button.btn.btn-primary");
   }
 
+  async fillBookingFormInvalidData({
+    firstname,
+    lastname,
+    email,
+    phoneInvalid,
+  }) {
+    await this.page.fill('input[name="firstname"]', firstname);
+    await this.page.fill('input[name="lastname"]', lastname);
+    await this.page.fill('input[name="email"]', email);
+    await this.page.fill('input[name="phone"]', phoneInvalid);
+  }
+
   async fillBookingForm({ firstname, lastname, email, phone }) {
     await this.page.fill('input[name="firstname"]', firstname);
     await this.page.fill('input[name="lastname"]', lastname);
@@ -41,6 +53,12 @@ export class BookingPage {
   async assertBookingSuccess() {
     await expect(
       this.page.locator(`text=${bookingData.successMessage}`)
+    ).toBeVisible();
+  }
+
+  async assertBookingFail() {
+    await expect(
+      this.page.locator(`text=${invalidBookingData.failureMessage}`)
     ).toBeVisible();
   }
 }

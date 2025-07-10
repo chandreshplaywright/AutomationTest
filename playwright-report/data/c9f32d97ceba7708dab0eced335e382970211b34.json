@@ -1,0 +1,426 @@
+{
+  "fileId": "c9f32d97ceba7708dab0eced335e382970211b34",
+  "fileName": "functional tests/booking.spec.ts",
+  "tests": [
+    {
+      "testId": "c9f32d97ceba7708dab0eced335e382970211b34-426b79d689ddca93d534aaba09cf1be7cc14b969",
+      "title": "Book a room",
+      "projectName": "",
+      "location": {
+        "file": "functional tests/booking.spec.ts",
+        "line": 5,
+        "column": 5
+      },
+      "duration": 4155,
+      "outcome": "expected",
+      "path": [
+        "functional tests/booking.spec.ts:5"
+      ],
+      "results": [
+        {
+          "duration": 4155,
+          "startTime": "2025-07-10T23:34:59.783Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2025-07-10T23:34:59.784Z",
+              "duration": 219,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2025-07-10T23:34:59.946Z",
+                  "duration": 57,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2025-07-10T23:35:00.008Z",
+              "duration": 566,
+              "snippet": " \u001b[90m  7 |\u001b[39m   \u001b[36masync\u001b[39m navigate() {\n \u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m\"/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m  9 |\u001b[39m   }",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 8,
+                "column": 21
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2025-07-10T23:35:00.575Z",
+              "duration": 12,
+              "snippet": " \u001b[90m 11 |\u001b[39m   \u001b[36masync\u001b[39m checkavailibility({ checkInDate\u001b[33m,\u001b[39m checkOutDate }) {\n \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 13 |\u001b[39m       \u001b[36mconst\u001b[39m inputs \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mquerySelectorAll(\u001b[32m\"input.form-control\"\u001b[39m)\u001b[33m;\u001b[39m",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 12,
+                "column": 21
+              }
+            },
+            {
+              "title": "locator.fill(input.form-control >> nth=0)",
+              "startTime": "2025-07-10T23:35:00.590Z",
+              "duration": 560,
+              "snippet": " \u001b[90m 17 |\u001b[39m     \u001b[90m// Step 2: Fill check-in (1st input)\u001b[39m\n \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"input.form-control\"\u001b[39m)\u001b[33m.\u001b[39mnth(\u001b[35m0\u001b[39m)\u001b[33m.\u001b[39mfill(checkInDate)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                                                         ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 19 |\u001b[39m",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 18,
+                "column": 58
+              }
+            },
+            {
+              "title": "locator.fill(input.form-control >> nth=1)",
+              "startTime": "2025-07-10T23:35:01.150Z",
+              "duration": 155,
+              "snippet": " \u001b[90m 20 |\u001b[39m     \u001b[90m// Step 3: Fill check-out (2nd input)\u001b[39m\n \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"input.form-control\"\u001b[39m)\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mfill(checkOutDate)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                                                         ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 22 |\u001b[39m",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 21,
+                "column": 58
+              }
+            },
+            {
+              "title": "page.click(button.btn.btn-primary)",
+              "startTime": "2025-07-10T23:35:01.306Z",
+              "duration": 355,
+              "snippet": " \u001b[90m 22 |\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m\"button.btn.btn-primary\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 24 |\u001b[39m   }",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 23,
+                "column": 21
+              }
+            },
+            {
+              "title": "locator.click(text=Book now >> nth=1)",
+              "startTime": "2025-07-10T23:35:01.661Z",
+              "duration": 650,
+              "snippet": " \u001b[90m 45 |\u001b[39m   \u001b[36masync\u001b[39m bookFirstRoom() {\n \u001b[90m 46 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"text=Book now\"\u001b[39m)\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                                                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 47 |\u001b[39m   }",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 46,
+                "column": 53
+              }
+            },
+            {
+              "title": "page.click(text=Reserve Now)",
+              "startTime": "2025-07-10T23:35:02.312Z",
+              "duration": 573,
+              "snippet": " \u001b[90m 49 |\u001b[39m   \u001b[36masync\u001b[39m reservenow() {\n \u001b[90m 50 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Reserve Now\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 51 |\u001b[39m   }",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 50,
+                "column": 21
+              }
+            },
+            {
+              "title": "page.fill(input[name=\"firstname\"])",
+              "startTime": "2025-07-10T23:35:02.885Z",
+              "duration": 78,
+              "snippet": " \u001b[90m 38 |\u001b[39m   \u001b[36masync\u001b[39m fillBookingForm({ firstname\u001b[33m,\u001b[39m lastname\u001b[33m,\u001b[39m email\u001b[33m,\u001b[39m phone }) {\n \u001b[90m 39 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"firstname\"]'\u001b[39m\u001b[33m,\u001b[39m firstname)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"lastname\"]'\u001b[39m\u001b[33m,\u001b[39m lastname)\u001b[33m;\u001b[39m",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 39,
+                "column": 21
+              }
+            },
+            {
+              "title": "page.fill(input[name=\"lastname\"])",
+              "startTime": "2025-07-10T23:35:02.964Z",
+              "duration": 26,
+              "snippet": " \u001b[90m 39 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"firstname\"]'\u001b[39m\u001b[33m,\u001b[39m firstname)\u001b[33m;\u001b[39m\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"lastname\"]'\u001b[39m\u001b[33m,\u001b[39m lastname)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"email\"]'\u001b[39m\u001b[33m,\u001b[39m email)\u001b[33m;\u001b[39m",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 40,
+                "column": 21
+              }
+            },
+            {
+              "title": "page.fill(input[name=\"email\"])",
+              "startTime": "2025-07-10T23:35:02.990Z",
+              "duration": 26,
+              "snippet": " \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"lastname\"]'\u001b[39m\u001b[33m,\u001b[39m lastname)\u001b[33m;\u001b[39m\n \u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"email\"]'\u001b[39m\u001b[33m,\u001b[39m email)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 42 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"phone\"]'\u001b[39m\u001b[33m,\u001b[39m phone)\u001b[33m;\u001b[39m",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 41,
+                "column": 21
+              }
+            },
+            {
+              "title": "page.fill(input[name=\"phone\"])",
+              "startTime": "2025-07-10T23:35:03.017Z",
+              "duration": 38,
+              "snippet": " \u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"email\"]'\u001b[39m\u001b[33m,\u001b[39m email)\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"phone\"]'\u001b[39m\u001b[33m,\u001b[39m phone)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 43 |\u001b[39m   }",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 42,
+                "column": 21
+              }
+            },
+            {
+              "title": "page.click(text=Reserve Now)",
+              "startTime": "2025-07-10T23:35:03.056Z",
+              "duration": 313,
+              "snippet": " \u001b[90m 49 |\u001b[39m   \u001b[36masync\u001b[39m reservenow() {\n \u001b[90m 50 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Reserve Now\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 51 |\u001b[39m   }",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 50,
+                "column": 21
+              }
+            },
+            {
+              "title": "expect.toBeVisible",
+              "startTime": "2025-07-10T23:35:03.370Z",
+              "duration": 387,
+              "snippet": " \u001b[90m 55 |\u001b[39m       \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m`text=${bookingData.successMessage}`\u001b[39m)\n \u001b[90m 56 |\u001b[39m     )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m      ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 57 |\u001b[39m   }",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 56,
+                "column": 7
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2025-07-10T23:35:03.758Z",
+              "duration": 180,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2025-07-10T23:35:03.893Z",
+                  "duration": 44,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "c9f32d97ceba7708dab0eced335e382970211b34-3891e3295ec4e04c490b7adec0cf06021dec7e09",
+      "title": "Invalid phone number",
+      "projectName": "",
+      "location": {
+        "file": "functional tests/booking.spec.ts",
+        "line": 17,
+        "column": 5
+      },
+      "duration": 3457,
+      "outcome": "expected",
+      "path": [
+        "functional tests/booking.spec.ts:17"
+      ],
+      "results": [
+        {
+          "duration": 3457,
+          "startTime": "2025-07-10T23:35:03.939Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2025-07-10T23:35:03.939Z",
+              "duration": 42,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2025-07-10T23:35:03.943Z",
+                  "duration": 38,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2025-07-10T23:35:03.982Z",
+              "duration": 610,
+              "snippet": " \u001b[90m  7 |\u001b[39m   \u001b[36masync\u001b[39m navigate() {\n \u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m\"/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m  9 |\u001b[39m   }",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 8,
+                "column": 21
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2025-07-10T23:35:04.592Z",
+              "duration": 26,
+              "snippet": " \u001b[90m 11 |\u001b[39m   \u001b[36masync\u001b[39m checkavailibility({ checkInDate\u001b[33m,\u001b[39m checkOutDate }) {\n \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 13 |\u001b[39m       \u001b[36mconst\u001b[39m inputs \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mquerySelectorAll(\u001b[32m\"input.form-control\"\u001b[39m)\u001b[33m;\u001b[39m",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 12,
+                "column": 21
+              }
+            },
+            {
+              "title": "locator.fill(input.form-control >> nth=0)",
+              "startTime": "2025-07-10T23:35:04.619Z",
+              "duration": 513,
+              "snippet": " \u001b[90m 17 |\u001b[39m     \u001b[90m// Step 2: Fill check-in (1st input)\u001b[39m\n \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"input.form-control\"\u001b[39m)\u001b[33m.\u001b[39mnth(\u001b[35m0\u001b[39m)\u001b[33m.\u001b[39mfill(checkInDate)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                                                         ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 19 |\u001b[39m",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 18,
+                "column": 58
+              }
+            },
+            {
+              "title": "locator.fill(input.form-control >> nth=1)",
+              "startTime": "2025-07-10T23:35:05.133Z",
+              "duration": 250,
+              "snippet": " \u001b[90m 20 |\u001b[39m     \u001b[90m// Step 3: Fill check-out (2nd input)\u001b[39m\n \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"input.form-control\"\u001b[39m)\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mfill(checkOutDate)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                                                         ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 22 |\u001b[39m",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 21,
+                "column": 58
+              }
+            },
+            {
+              "title": "page.click(button.btn.btn-primary)",
+              "startTime": "2025-07-10T23:35:05.384Z",
+              "duration": 274,
+              "snippet": " \u001b[90m 22 |\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m\"button.btn.btn-primary\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 24 |\u001b[39m   }",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 23,
+                "column": 21
+              }
+            },
+            {
+              "title": "locator.click(text=Book now >> nth=1)",
+              "startTime": "2025-07-10T23:35:05.659Z",
+              "duration": 280,
+              "snippet": " \u001b[90m 45 |\u001b[39m   \u001b[36masync\u001b[39m bookFirstRoom() {\n \u001b[90m 46 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"text=Book now\"\u001b[39m)\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                                                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 47 |\u001b[39m   }",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 46,
+                "column": 53
+              }
+            },
+            {
+              "title": "page.click(text=Reserve Now)",
+              "startTime": "2025-07-10T23:35:05.940Z",
+              "duration": 648,
+              "snippet": " \u001b[90m 49 |\u001b[39m   \u001b[36masync\u001b[39m reservenow() {\n \u001b[90m 50 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Reserve Now\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 51 |\u001b[39m   }",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 50,
+                "column": 21
+              }
+            },
+            {
+              "title": "page.fill(input[name=\"firstname\"])",
+              "startTime": "2025-07-10T23:35:06.589Z",
+              "duration": 35,
+              "snippet": " \u001b[90m 31 |\u001b[39m   }) {\n \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"firstname\"]'\u001b[39m\u001b[33m,\u001b[39m firstname)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 33 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"lastname\"]'\u001b[39m\u001b[33m,\u001b[39m lastname)\u001b[33m;\u001b[39m",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 32,
+                "column": 21
+              }
+            },
+            {
+              "title": "page.fill(input[name=\"lastname\"])",
+              "startTime": "2025-07-10T23:35:06.625Z",
+              "duration": 63,
+              "snippet": " \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"firstname\"]'\u001b[39m\u001b[33m,\u001b[39m firstname)\u001b[33m;\u001b[39m\n \u001b[90m 33 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"lastname\"]'\u001b[39m\u001b[33m,\u001b[39m lastname)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"email\"]'\u001b[39m\u001b[33m,\u001b[39m email)\u001b[33m;\u001b[39m",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 33,
+                "column": 21
+              }
+            },
+            {
+              "title": "page.fill(input[name=\"email\"])",
+              "startTime": "2025-07-10T23:35:06.689Z",
+              "duration": 18,
+              "snippet": " \u001b[90m 33 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"lastname\"]'\u001b[39m\u001b[33m,\u001b[39m lastname)\u001b[33m;\u001b[39m\n \u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"email\"]'\u001b[39m\u001b[33m,\u001b[39m email)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 35 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"phone\"]'\u001b[39m\u001b[33m,\u001b[39m phoneInvalid)\u001b[33m;\u001b[39m",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 34,
+                "column": 21
+              }
+            },
+            {
+              "title": "page.fill(input[name=\"phone\"])",
+              "startTime": "2025-07-10T23:35:06.708Z",
+              "duration": 58,
+              "snippet": " \u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"email\"]'\u001b[39m\u001b[33m,\u001b[39m email)\u001b[33m;\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"phone\"]'\u001b[39m\u001b[33m,\u001b[39m phoneInvalid)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 36 |\u001b[39m   }",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 35,
+                "column": 21
+              }
+            },
+            {
+              "title": "page.click(text=Reserve Now)",
+              "startTime": "2025-07-10T23:35:06.767Z",
+              "duration": 250,
+              "snippet": " \u001b[90m 49 |\u001b[39m   \u001b[36masync\u001b[39m reservenow() {\n \u001b[90m 50 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Reserve Now\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 51 |\u001b[39m   }",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 50,
+                "column": 21
+              }
+            },
+            {
+              "title": "expect.toBeVisible",
+              "startTime": "2025-07-10T23:35:07.018Z",
+              "duration": 141,
+              "snippet": " \u001b[90m 61 |\u001b[39m       \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m`text=${invalidBookingData.failureMessage}`\u001b[39m)\n \u001b[90m 62 |\u001b[39m     )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m      ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 63 |\u001b[39m   }",
+              "steps": [],
+              "location": {
+                "file": "../pages/BookingPage.ts",
+                "line": 62,
+                "column": 7
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2025-07-10T23:35:07.159Z",
+              "duration": 237,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2025-07-10T23:35:07.331Z",
+                  "duration": 63,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    }
+  ]
+}

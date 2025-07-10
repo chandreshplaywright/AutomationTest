@@ -1,61 +1,61 @@
 {
-  "fileId": "27b770defe4ea4660d266e27caab768f6243f0c3",
-  "fileName": "HomePerf.spec.ts",
+  "fileId": "2a40afe501ed5da183949b8dfb74c675740bcb0a",
+  "fileName": "non functional tests/homePerf.spec.ts",
   "tests": [
     {
-      "testId": "27b770defe4ea4660d266e27caab768f6243f0c3-656736e68b6f62bd240f133b75351eb555b9ae47",
+      "testId": "2a40afe501ed5da183949b8dfb74c675740bcb0a-656736e68b6f62bd240f133b75351eb555b9ae47",
       "title": "Check homepage performance",
       "projectName": "",
       "location": {
-        "file": "HomePerf.spec.ts",
+        "file": "non functional tests/homePerf.spec.ts",
         "line": 3,
         "column": 5
       },
-      "duration": 884,
+      "duration": 781,
       "outcome": "expected",
       "path": [
-        "HomePerf.spec.ts:3"
+        "non functional tests/homePerf.spec.ts:3"
       ],
       "results": [
         {
-          "duration": 884,
-          "startTime": "2025-07-10T12:54:41.201Z",
+          "duration": 781,
+          "startTime": "2025-07-10T23:35:09.691Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2025-07-10T12:54:41.201Z",
-              "duration": 84,
+              "startTime": "2025-07-10T23:35:09.692Z",
+              "duration": 45,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2025-07-10T12:54:41.212Z",
-                  "duration": 73,
+                  "startTime": "2025-07-10T23:35:09.697Z",
+                  "duration": 40,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(https://automationintesting.online)",
-              "startTime": "2025-07-10T12:54:41.286Z",
-              "duration": 632,
+              "startTime": "2025-07-10T23:35:09.738Z",
+              "duration": 567,
               "snippet": " \u001b[90m  4 |\u001b[39m   \u001b[36mconst\u001b[39m start \u001b[33m=\u001b[39m performance\u001b[33m.\u001b[39mnow()\u001b[33m;\u001b[39m\n \u001b[90m  5 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://automationintesting.online\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m  6 |\u001b[39m   \u001b[36mconst\u001b[39m end \u001b[33m=\u001b[39m performance\u001b[33m.\u001b[39mnow()\u001b[33m;\u001b[39m",
               "steps": [],
               "location": {
-                "file": "HomePerf.spec.ts",
+                "file": "non functional tests/homePerf.spec.ts",
                 "line": 5,
                 "column": 14
               }
             },
             {
               "title": "After Hooks",
-              "startTime": "2025-07-10T12:54:41.921Z",
-              "duration": 163,
+              "startTime": "2025-07-10T23:35:10.307Z",
+              "duration": 165,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2025-07-10T12:54:42.055Z",
-                  "duration": 29,
+                  "startTime": "2025-07-10T23:35:10.445Z",
+                  "duration": 27,
                   "steps": []
                 }
               ]
@@ -67,7 +67,7 @@
             {
               "name": "stdout",
               "contentType": "text/plain",
-              "body": "Page loaded in 632.65 ms\n"
+              "body": "Page loaded in 567.73 ms\n"
             }
           ]
         }
