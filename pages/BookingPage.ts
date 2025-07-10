@@ -1,26 +1,31 @@
-import { Page } from "@playwright/test";
+import { Page, expect } from "@playwright/test";
+import { contactFormData } from "../utils/testData";
 
 export class BookingPage {
   constructor(private page: Page) {}
 
   async navigate() {
-    await this.page.goto("https://automationintesting.online");
+    await this.page.goto("/");
   }
 
-  async fillBookingForm({ name, email, phone }) {
-    await this.page.fill("#name", name);
-    await this.page.fill("#email", email);
-    await this.page.fill("#phone", phone);
+  async fillBookingForm({ firstname, lastname, email, phone }) {
+    await this.page.fill('input[name="firstname"]', firstname);
+    await this.page.fill('input[name="lastname"]', lastname);
+    await this.page.fill('input[name="email"]', email);
+    await this.page.fill('input[name="phone"]', phone);
   }
 
   async bookFirstRoom() {
-    await this.page.click(".room:nth-child(1) button");
-    await this.page.click("text=Book");
+    await this.page.locator("text=Book now").nth(1).click();
+  }
+
+  async reservenow() {
+    await this.page.click("text=Reserve Now");
   }
 
   async assertBookingSuccess() {
-    await this.page
-      .locator("text=Booking Successful")
-      .waitFor({ state: "visible" });
+    await expect(
+      this.page.locator(`text=${contactFormData.successMessage}`)
+    ).toBeVisible();
   }
 }

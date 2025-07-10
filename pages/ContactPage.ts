@@ -1,10 +1,11 @@
-import { Page } from "@playwright/test";
+import { Page, expect } from "@playwright/test";
+import { contactFormData } from "../utils/testData";
 
 export class ContactPage {
   constructor(private page: Page) {}
 
   async navigate() {
-    await this.page.goto("https://automationintesting.online/#/contact");
+    await this.page.goto("/#/contact");
   }
 
   async fillForm({ name, email, phone, subject, description }) {
@@ -16,10 +17,12 @@ export class ContactPage {
   }
 
   async submitForm() {
-    await this.page.click("#submitContact");
+    await this.page.click("text=submit");
   }
 
   async assertSuccess() {
-    await this.page.locator(".contact-success").waitFor({ state: "visible" });
+    await expect(
+      this.page.locator(`text=${contactFormData.successMessage}`)
+    ).toBeVisible();
   }
 }

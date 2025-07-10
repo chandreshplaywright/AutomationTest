@@ -6,7 +6,9 @@ test("Book a room using shared data and selectors", async ({ page }) => {
   const bookingPage = new BookingPage(page);
 
   await bookingPage.navigate();
-  await bookingPage.fillBookingForm(bookingData);
   await bookingPage.bookFirstRoom();
+  await bookingPage.reservenow();
+  await bookingPage.fillBookingForm(bookingData);
+  await bookingPage.reservenow();
   await bookingPage.assertBookingSuccess();
 });
