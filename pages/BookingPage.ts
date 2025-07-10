@@ -8,6 +8,17 @@ export class BookingPage {
     await this.page.goto("/");
   }
 
+  async checkavailibility({ checkInDate, checkOutDate }) {
+    await this.page
+      .locator("input.react-datepicker-ignore-onclickoutside")
+      .nth(0)
+      .fill(checkInDate);
+    await this.page
+      .locator("input.react-datepicker-ignore-onclickoutside")
+      .nth(1)
+      .fill(checkOutDate);
+  }
+
   async fillBookingForm({ firstname, lastname, email, phone }) {
     await this.page.fill('input[name="firstname"]', firstname);
     await this.page.fill('input[name="lastname"]', lastname);
