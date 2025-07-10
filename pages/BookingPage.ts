@@ -20,7 +20,7 @@ export class BookingPage {
     // Step 3: Fill check-out (2nd input)
     await this.page.locator("input.form-control").nth(1).fill(checkOutDate);
 
-    await this.page.click("text=Check Availability");
+    await this.page.click("button.btn.btn-primary");
   }
 
   async fillBookingForm({ firstname, lastname, email, phone }) {

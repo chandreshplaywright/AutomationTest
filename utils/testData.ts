@@ -3,8 +3,8 @@ export const bookingData = {
   lastname: "Doe",
   email: "john@example.com",
   phone: "12345678901",
-  checkInDate: "01/09/2025",
-  checkOutDate: "3/09/2025",
+  checkInDate: "04/09/2025",
+  checkOutDate: "08/09/2025",
   successMessage: "Your booking has been confirmed",
 };
 
