@@ -9,15 +9,18 @@ export class BookingPage {
   }
 
   async checkavailibility({ checkInDate, checkOutDate }) {
-    await this.page.fill("#checkin", checkInDate);
-    /*await this.page
-      .locator("input.react-datepicker-ignore-onclickoutside")
-      .nth(0)
-      .fill(checkInDate);
-    await this.page
-      .locator("input.react-datepicker-ignore-onclickoutside")
-      .nth(1)
-      .fill(checkOutDate); */
+    await this.page.evaluate(() => {
+      const inputs = document.querySelectorAll("input.form-control");
+      inputs.forEach((input) => input.removeAttribute("readonly"));
+    });
+
+    // Step 2: Fill check-in (1st input)
+    await this.page.locator("input.form-control").nth(0).fill(checkInDate);
+
+    // Step 3: Fill check-out (2nd input)
+    await this.page.locator("input.form-control").nth(1).fill(checkOutDate);
+
+    await this.page.click("text=Check Availability");
   }
 
   async fillBookingForm({ firstname, lastname, email, phone }) {
