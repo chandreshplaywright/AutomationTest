@@ -5,7 +5,6 @@
     "test": "npx playwright test --headed"
   },
   "devDependencies": {
-    "@playwright/test": "^1.16.2",
-    "axe-playwright": "^2.1.0"
+    "@playwright/test": "^1.16.2"
   }
 }

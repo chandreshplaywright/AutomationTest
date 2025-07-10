@@ -9,14 +9,15 @@ export class BookingPage {
   }
 
   async checkavailibility({ checkInDate, checkOutDate }) {
-    await this.page
+    await this.page.fill("#checkin", checkInDate);
+    /*await this.page
       .locator("input.react-datepicker-ignore-onclickoutside")
       .nth(0)
       .fill(checkInDate);
     await this.page
       .locator("input.react-datepicker-ignore-onclickoutside")
       .nth(1)
-      .fill(checkOutDate);
+      .fill(checkOutDate); */
   }
 
   async fillBookingForm({ firstname, lastname, email, phone }) {
