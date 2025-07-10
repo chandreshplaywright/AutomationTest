@@ -1,5 +1,5 @@
 import { Page, expect } from "@playwright/test";
-import { contactFormData } from "../utils/testData";
+import { bookingData } from "../utils/testData";
 
 export class BookingPage {
   constructor(private page: Page) {}
@@ -40,7 +40,7 @@ export class BookingPage {
 
   async assertBookingSuccess() {
     await expect(
-      this.page.locator(`text=${contactFormData.successMessage}`)
+      this.page.locator(`text=${bookingData.successMessage}`)
     ).toBeVisible();
   }
 }
