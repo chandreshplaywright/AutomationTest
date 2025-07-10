@@ -1,9 +1,9 @@
-import type { PlaywrightTestConfig } from "@playwright/test";
+import type { PlaywrightTehttps://automationintesting.onlinestConfig } from "@playwright/test";
 
 const config: PlaywrightTestConfig = {
   testDir: "./tests",
   use: {
-    baseURL: "https://automationintesting.online",
+    baseURL: "",
     headless: true,
     screenshot: "only-on-failure",
     video: "retain-on-failure",

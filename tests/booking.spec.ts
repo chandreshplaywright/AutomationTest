@@ -2,7 +2,7 @@ import { test } from "@playwright/test";
 import { BookingPage } from "../pages/BookingPage";
 import { bookingData } from "../utils/testData";
 
-test("Book a room using shared data and selectors", async ({ page }) => {
+test("Book a room", async ({ page }) => {
   const bookingPage = new BookingPage(page);
 
   await bookingPage.navigate();
