@@ -5,8 +5,28 @@ import { contactFormData } from "../../utils/testData";
 test("Submit contact form", async ({ page }) => {
   const contactPage = new ContactPage(page);
 
-  await contactPage.navigate();
-  await contactPage.fillForm(contactFormData);
-  await contactPage.submitForm();
-  await contactPage.assertSuccess();
+  await test.step("Navigate to the ContactForm", async () => {
+
+   await contactPage.navigate();
+ 
+  });
+
+  await test.step("Fill ContactForm", async () => {
+
+   await contactPage.fillForm(contactFormData);
+ 
+  });
+
+  await test.step("Submit ContactForm", async () => {
+
+   await contactPage.submitForm();
+  
+  });
+
+  await test.step("Validate ContactForm is submitted", async () => {
+
+   await contactPage.assertSuccess();
+  
+  });
+
 });

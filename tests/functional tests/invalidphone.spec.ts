@@ -1,16 +1,16 @@
 import { test } from "@playwright/test";
 import { BookingPage } from "../../pages/BookingPage";
-import { bookingData } from "../../utils/testData";
+import { invalidBookingData } from "../../utils/testData";
 
-test("Book a room", async ({ page }) => {
+test("Invalid phone number", async ({ page }) => {
   const bookingPage = new BookingPage(page);
 
-  await test.step("Navigate to the HomemPage", async () => {
+  await test.step("Navigate to the HomePage", async () => {
     await bookingPage.navigate();
   });
 
   await test.step("Check Availibility of the room", async () => {
-    await bookingPage.checkavailibility(bookingData);
+    await bookingPage.checkavailibility(invalidBookingData);
   });
 
   await test.step("Booke first Available room", async () => {
@@ -21,16 +21,15 @@ test("Book a room", async ({ page }) => {
     await bookingPage.reservenow();
   });
 
-  await test.step("Fill Booking Form", async () => {
-    await bookingPage.fillBookingForm(bookingData);
+  await test.step("Fill Invalid Booking Form", async () => {
+    await bookingPage.fillBookingFormInvalidData(invalidBookingData);
   });
 
   await test.step("Click Reserve now", async () => {
     await bookingPage.reservenow();
   });
 
-  await test.step("Validate if the", async () => {
-    await bookingPage.assertBookingSuccess();
+  await test.step("Validate error message is displayed", async () => {
+    await bookingPage.assertBookingFail();
   });
-  
 });

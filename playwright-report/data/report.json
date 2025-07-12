@@ -13,38 +13,22 @@
             "line": 5,
             "column": 5
           },
-          "duration": 4155,
+          "duration": 8133,
           "outcome": "expected",
           "path": [
             "functional tests/booking.spec.ts:5"
           ],
           "ok": true
-        },
-        {
-          "testId": "c9f32d97ceba7708dab0eced335e382970211b34-3891e3295ec4e04c490b7adec0cf06021dec7e09",
-          "title": "Invalid phone number",
-          "projectName": "",
-          "location": {
-            "file": "functional tests/booking.spec.ts",
-            "line": 17,
-            "column": 5
-          },
-          "duration": 3457,
-          "outcome": "expected",
-          "path": [
-            "functional tests/booking.spec.ts:17"
-          ],
-          "ok": true
         }
       ],
       "stats": {
-        "total": 2,
-        "expected": 2,
+        "total": 1,
+        "expected": 1,
         "unexpected": 0,
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 7612
+        "duration": 8133
       }
     },
     {
@@ -60,7 +44,7 @@
             "line": 5,
             "column": 5
           },
-          "duration": 2290,
+          "duration": 2583,
           "outcome": "expected",
           "path": [
             "functional tests/contact.spec.ts:5"
@@ -75,7 +59,38 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 2290
+        "duration": 2583
+      }
+    },
+    {
+      "fileId": "72593e59b0ed8716cb1d8f3c4321b555c381dd89",
+      "fileName": "functional tests/invalidphone.spec.ts",
+      "tests": [
+        {
+          "testId": "72593e59b0ed8716cb1d8f3c4321b555c381dd89-3891e3295ec4e04c490b7adec0cf06021dec7e09",
+          "title": "Invalid phone number",
+          "projectName": "",
+          "location": {
+            "file": "functional tests/invalidphone.spec.ts",
+            "line": 5,
+            "column": 5
+          },
+          "duration": 4116,
+          "outcome": "expected",
+          "path": [
+            "functional tests/invalidphone.spec.ts:5"
+          ],
+          "ok": true
+        }
+      ],
+      "stats": {
+        "total": 1,
+        "expected": 1,
+        "unexpected": 0,
+        "flaky": 0,
+        "skipped": 0,
+        "ok": true,
+        "duration": 4116
       }
     },
     {
@@ -91,7 +106,7 @@
             "line": 3,
             "column": 5
           },
-          "duration": 781,
+          "duration": 955,
           "outcome": "expected",
           "path": [
             "non functional tests/homePerf.spec.ts:3"
@@ -106,7 +121,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 781
+        "duration": 955
       }
     },
     {
@@ -122,7 +137,7 @@
             "line": 3,
             "column": 5
           },
-          "duration": 805,
+          "duration": 956,
           "outcome": "expected",
           "path": [
             "non functional tests/navigationPerf.spec.ts:3"
@@ -137,38 +152,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 805
-      }
-    },
-    {
-      "fileId": "85a28ac6f674e732d114f9cca3f3cabc70e9f84b",
-      "fileName": "non functional tests/NavigationPerf.spec.ts",
-      "tests": [
-        {
-          "testId": "85a28ac6f674e732d114f9cca3f3cabc70e9f84b-69be7f9680014cc39519db07a9e2c00f0e749baf",
-          "title": "basic performance navigation",
-          "projectName": "",
-          "location": {
-            "file": "non functional tests/NavigationPerf.spec.ts",
-            "line": 3,
-            "column": 5
-          },
-          "duration": 762,
-          "outcome": "expected",
-          "path": [
-            "non functional tests/NavigationPerf.spec.ts:3"
-          ],
-          "ok": true
-        }
-      ],
-      "stats": {
-        "total": 1,
-        "expected": 1,
-        "unexpected": 0,
-        "flaky": 0,
-        "skipped": 0,
-        "ok": true,
-        "duration": 762
+        "duration": 956
       }
     }
   ],
@@ -176,12 +160,12 @@
     ""
   ],
   "stats": {
-    "total": 6,
-    "expected": 6,
+    "total": 5,
+    "expected": 5,
     "unexpected": 0,
     "flaky": 0,
     "skipped": 0,
     "ok": true,
-    "duration": 12250
+    "duration": 16743
   }
 }

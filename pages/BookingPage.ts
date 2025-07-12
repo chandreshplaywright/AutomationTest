@@ -14,21 +14,13 @@ export class BookingPage {
       inputs.forEach((input) => input.removeAttribute("readonly"));
     });
 
-    // Step 2: Fill check-in (1st input)
     await this.page.locator("input.form-control").nth(0).fill(checkInDate);
-
-    // Step 3: Fill check-out (2nd input)
     await this.page.locator("input.form-control").nth(1).fill(checkOutDate);
 
     await this.page.click("button.btn.btn-primary");
   }
 
-  async fillBookingFormInvalidData({
-    firstname,
-    lastname,
-    email,
-    phoneInvalid,
-  }) {
+  async fillBookingFormInvalidData({firstname, lastname, email, phoneInvalid,}) {
     await this.page.fill('input[name="firstname"]', firstname);
     await this.page.fill('input[name="lastname"]', lastname);
     await this.page.fill('input[name="email"]', email);

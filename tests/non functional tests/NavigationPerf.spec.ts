@@ -1,4 +1,4 @@
-import { test } from "@playwright/test";
+/*import { test } from "@playwright/test";
 
 test("basic performance navigation", async ({ page }) => {
   await page.goto("https://automationintesting.online");
@@ -10,3 +10,5 @@ test("basic performance navigation", async ({ page }) => {
   const navigationTiming = JSON.parse(navigationTimingJson);
   console.log(navigationTiming);
 });
+
+*/
