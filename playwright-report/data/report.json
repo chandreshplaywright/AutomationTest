@@ -13,7 +13,7 @@
             "line": 5,
             "column": 5
           },
-          "duration": 19326,
+          "duration": 14433,
           "outcome": "expected",
           "path": [
             "functional tests/booking.spec.ts:5"
@@ -28,7 +28,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 19326
+        "duration": 14433
       }
     },
     {
@@ -44,7 +44,7 @@
             "line": 5,
             "column": 5
           },
-          "duration": 6878,
+          "duration": 5315,
           "outcome": "expected",
           "path": [
             "functional tests/contact.spec.ts:5"
@@ -59,7 +59,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 6878
+        "duration": 5315
       }
     },
     {
@@ -75,7 +75,7 @@
             "line": 5,
             "column": 5
           },
-          "duration": 14964,
+          "duration": 10865,
           "outcome": "expected",
           "path": [
             "functional tests/invalidphone.spec.ts:5"
@@ -90,7 +90,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 14964
+        "duration": 10865
       }
     },
     {
@@ -106,7 +106,7 @@
             "line": 3,
             "column": 5
           },
-          "duration": 3999,
+          "duration": 2647,
           "outcome": "expected",
           "path": [
             "non functional tests/homePerf.spec.ts:3"
@@ -121,7 +121,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 3999
+        "duration": 2647
       }
     },
     {
@@ -137,7 +137,7 @@
             "line": 3,
             "column": 5
           },
-          "duration": 3268,
+          "duration": 1800,
           "outcome": "expected",
           "path": [
             "non functional tests/navigationPerf.spec.ts:3"
@@ -152,38 +152,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 3268
-      }
-    },
-    {
-      "fileId": "85a28ac6f674e732d114f9cca3f3cabc70e9f84b",
-      "fileName": "non functional tests/NavigationPerf.spec.ts",
-      "tests": [
-        {
-          "testId": "85a28ac6f674e732d114f9cca3f3cabc70e9f84b-69be7f9680014cc39519db07a9e2c00f0e749baf",
-          "title": "basic performance navigation",
-          "projectName": "",
-          "location": {
-            "file": "non functional tests/NavigationPerf.spec.ts",
-            "line": 3,
-            "column": 5
-          },
-          "duration": 2514,
-          "outcome": "expected",
-          "path": [
-            "non functional tests/NavigationPerf.spec.ts:3"
-          ],
-          "ok": true
-        }
-      ],
-      "stats": {
-        "total": 1,
-        "expected": 1,
-        "unexpected": 0,
-        "flaky": 0,
-        "skipped": 0,
-        "ok": true,
-        "duration": 2514
+        "duration": 1800
       }
     }
   ],
@@ -191,12 +160,12 @@
     ""
   ],
   "stats": {
-    "total": 6,
-    "expected": 6,
+    "total": 5,
+    "expected": 5,
     "unexpected": 0,
     "flaky": 0,
     "skipped": 0,
     "ok": true,
-    "duration": 50949
+    "duration": 35060
   }
 }

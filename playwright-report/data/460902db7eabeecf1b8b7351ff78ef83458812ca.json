@@ -11,40 +11,40 @@
         "line": 5,
         "column": 5
       },
-      "duration": 6878,
+      "duration": 5315,
       "outcome": "expected",
       "path": [
         "functional tests/contact.spec.ts:5"
       ],
       "results": [
         {
-          "duration": 6878,
-          "startTime": "2025-07-13T07:33:57.681Z",
+          "duration": 5315,
+          "startTime": "2025-07-13T12:08:21.435Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2025-07-13T07:33:57.684Z",
-              "duration": 252,
+              "startTime": "2025-07-13T12:08:21.437Z",
+              "duration": 158,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2025-07-13T07:33:57.707Z",
-                  "duration": 228,
+                  "startTime": "2025-07-13T12:08:21.476Z",
+                  "duration": 116,
                   "steps": []
                 }
               ]
             },
             {
               "title": "Navigate to the ContactForm",
-              "startTime": "2025-07-13T07:33:57.937Z",
-              "duration": 1516,
+              "startTime": "2025-07-13T12:08:21.596Z",
+              "duration": 1383,
               "snippet": " \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Navigate to the ContactForm\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m  9 |\u001b[39m",
               "steps": [
                 {
                   "title": "page.goto(/#/contact)",
-                  "startTime": "2025-07-13T07:33:57.940Z",
-                  "duration": 1513,
+                  "startTime": "2025-07-13T12:08:21.600Z",
+                  "duration": 1378,
                   "snippet": " \u001b[90m  7 |\u001b[39m   \u001b[36masync\u001b[39m navigate() {\n \u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m\"/#/contact\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m  9 |\u001b[39m   }",
                   "steps": [],
                   "location": {
@@ -62,14 +62,14 @@
             },
             {
               "title": "Fill ContactForm",
-              "startTime": "2025-07-13T07:33:59.454Z",
-              "duration": 2971,
+              "startTime": "2025-07-13T12:08:22.979Z",
+              "duration": 2417,
               "snippet": " \u001b[90m 13 |\u001b[39m\n \u001b[90m 14 |\u001b[39m   \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Fill ContactForm\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 15 |\u001b[39m",
               "steps": [
                 {
                   "title": "page.fill(#name)",
-                  "startTime": "2025-07-13T07:33:59.464Z",
-                  "duration": 1484,
+                  "startTime": "2025-07-13T12:08:22.981Z",
+                  "duration": 1426,
                   "snippet": " \u001b[90m 11 |\u001b[39m   \u001b[36masync\u001b[39m fillForm({ name\u001b[33m,\u001b[39m email\u001b[33m,\u001b[39m phone\u001b[33m,\u001b[39m subject\u001b[33m,\u001b[39m description }) {\n \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#name\"\u001b[39m\u001b[33m,\u001b[39m name)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#email\"\u001b[39m\u001b[33m,\u001b[39m email)\u001b[33m;\u001b[39m",
                   "steps": [],
                   "location": {
@@ -80,8 +80,8 @@
                 },
                 {
                   "title": "page.fill(#email)",
-                  "startTime": "2025-07-13T07:34:00.954Z",
-                  "duration": 482,
+                  "startTime": "2025-07-13T12:08:24.408Z",
+                  "duration": 401,
                   "snippet": " \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#name\"\u001b[39m\u001b[33m,\u001b[39m name)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#email\"\u001b[39m\u001b[33m,\u001b[39m email)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#phone\"\u001b[39m\u001b[33m,\u001b[39m phone)\u001b[33m;\u001b[39m",
                   "steps": [],
                   "location": {
@@ -92,8 +92,8 @@
                 },
                 {
                   "title": "page.fill(#phone)",
-                  "startTime": "2025-07-13T07:34:01.440Z",
-                  "duration": 345,
+                  "startTime": "2025-07-13T12:08:24.811Z",
+                  "duration": 220,
                   "snippet": " \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#email\"\u001b[39m\u001b[33m,\u001b[39m email)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#phone\"\u001b[39m\u001b[33m,\u001b[39m phone)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#subject\"\u001b[39m\u001b[33m,\u001b[39m subject)\u001b[33m;\u001b[39m",
                   "steps": [],
                   "location": {
@@ -104,8 +104,8 @@
                 },
                 {
                   "title": "page.fill(#subject)",
-                  "startTime": "2025-07-13T07:34:01.786Z",
-                  "duration": 208,
+                  "startTime": "2025-07-13T12:08:25.032Z",
+                  "duration": 212,
                   "snippet": " \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#phone\"\u001b[39m\u001b[33m,\u001b[39m phone)\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#subject\"\u001b[39m\u001b[33m,\u001b[39m subject)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#description\"\u001b[39m\u001b[33m,\u001b[39m description)\u001b[33m;\u001b[39m",
                   "steps": [],
                   "location": {
@@ -116,8 +116,8 @@
                 },
                 {
                   "title": "page.fill(#description)",
-                  "startTime": "2025-07-13T07:34:01.995Z",
-                  "duration": 430,
+                  "startTime": "2025-07-13T12:08:25.245Z",
+                  "duration": 150,
                   "snippet": " \u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#subject\"\u001b[39m\u001b[33m,\u001b[39m subject)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m\"#description\"\u001b[39m\u001b[33m,\u001b[39m description)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 17 |\u001b[39m   }",
                   "steps": [],
                   "location": {
@@ -135,14 +135,14 @@
             },
             {
               "title": "Submit ContactForm",
-              "startTime": "2025-07-13T07:34:02.425Z",
-              "duration": 1380,
+              "startTime": "2025-07-13T12:08:25.396Z",
+              "duration": 810,
               "snippet": " \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Submit ContactForm\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 21 |\u001b[39m",
               "steps": [
                 {
                   "title": "page.click(text=submit)",
-                  "startTime": "2025-07-13T07:34:02.427Z",
-                  "duration": 1378,
+                  "startTime": "2025-07-13T12:08:25.398Z",
+                  "duration": 807,
                   "snippet": " \u001b[90m 19 |\u001b[39m   \u001b[36masync\u001b[39m submitForm() {\n \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m\"text=submit\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 21 |\u001b[39m   }",
                   "steps": [],
                   "location": {
@@ -160,14 +160,14 @@
             },
             {
               "title": "Validate ContactForm is submitted",
-              "startTime": "2025-07-13T07:34:03.806Z",
-              "duration": 330,
+              "startTime": "2025-07-13T12:08:26.207Z",
+              "duration": 196,
               "snippet": " \u001b[90m 25 |\u001b[39m\n \u001b[90m 26 |\u001b[39m   \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Validate ContactForm is submitted\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 27 |\u001b[39m",
               "steps": [
                 {
                   "title": "expect.toBeVisible",
-                  "startTime": "2025-07-13T07:34:03.808Z",
-                  "duration": 323,
+                  "startTime": "2025-07-13T12:08:26.209Z",
+                  "duration": 194,
                   "snippet": " \u001b[90m 25 |\u001b[39m       \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m`text=${contactFormData.successMessage}`\u001b[39m)\n \u001b[90m 26 |\u001b[39m     )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m      ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 27 |\u001b[39m   }",
                   "steps": [],
                   "location": {
@@ -185,13 +185,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2025-07-13T07:34:04.137Z",
-              "duration": 422,
+              "startTime": "2025-07-13T12:08:26.403Z",
+              "duration": 347,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2025-07-13T07:34:04.421Z",
-                  "duration": 136,
+                  "startTime": "2025-07-13T12:08:26.599Z",
+                  "duration": 149,
                   "steps": []
                 }
               ]

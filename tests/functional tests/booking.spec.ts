@@ -29,7 +29,7 @@ test("Book a room", async ({ page }) => {
     await bookingPage.reservenow();
   });
 
-  await test.step("Validate if the", async () => {
+  await test.step("Validate room is booked successfully", async () => {
     await bookingPage.assertBookingSuccess();
   });
   
