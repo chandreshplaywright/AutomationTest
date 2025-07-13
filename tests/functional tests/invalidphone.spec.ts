@@ -2,7 +2,7 @@ import { test } from "@playwright/test";
 import { BookingPage } from "../../pages/BookingPage";
 import { invalidBookingData } from "../../utils/testData";
 
-test("Invalid phone number", async ({ page }) => {
+test("Invalid Booking Details", async ({ page }) => {
   const bookingPage = new BookingPage(page);
 
   await test.step("Navigate to the HomePage", async () => {
