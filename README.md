@@ -18,13 +18,12 @@ npm init playwright@latest
 
 	3.2) To run a specific test file:
 	
-			Function:
-			
-           npx playwright test -g "book a room"
+ 	      Function Test:	
+                   npx playwright test -g "book a room"
 		   npx playwright test -g "Submit contact form"
 		   npx playwright test -g "Invalid Booking Details"
-		   
-		   Non Functional:
+   
+              Non Functional Test:
 		   npx playwright test -g "Check homepage performance"
 		   npx playwright test -g "basic performance navigation"
 
