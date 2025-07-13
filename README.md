@@ -1,4 +1,4 @@
-# AutomationTest
+# AutomationTest Using Playwright/Typescript
 
 Instructions:
 
