@@ -11,40 +11,40 @@
         "line": 5,
         "column": 5
       },
-      "duration": 4116,
+      "duration": 14964,
       "outcome": "expected",
       "path": [
         "functional tests/invalidphone.spec.ts:5"
       ],
       "results": [
         {
-          "duration": 4116,
-          "startTime": "2025-07-12T21:40:30.747Z",
+          "duration": 14964,
+          "startTime": "2025-07-13T07:34:04.565Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2025-07-12T21:40:30.747Z",
-              "duration": 71,
+              "startTime": "2025-07-13T07:34:04.568Z",
+              "duration": 133,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2025-07-12T21:40:30.769Z",
-                  "duration": 49,
+                  "startTime": "2025-07-13T07:34:04.604Z",
+                  "duration": 97,
                   "steps": []
                 }
               ]
             },
             {
               "title": "Navigate to the HomePage",
-              "startTime": "2025-07-12T21:40:30.819Z",
-              "duration": 634,
+              "startTime": "2025-07-13T07:34:04.702Z",
+              "duration": 1798,
               "snippet": " \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Navigate to the HomePage\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m bookingPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m",
               "steps": [
                 {
                   "title": "page.goto(/)",
-                  "startTime": "2025-07-12T21:40:30.819Z",
-                  "duration": 634,
+                  "startTime": "2025-07-13T07:34:04.703Z",
+                  "duration": 1782,
                   "snippet": " \u001b[90m  7 |\u001b[39m   \u001b[36masync\u001b[39m navigate() {\n \u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m\"/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m  9 |\u001b[39m   }",
                   "steps": [],
                   "location": {
@@ -62,14 +62,14 @@
             },
             {
               "title": "Check Availibility of the room",
-              "startTime": "2025-07-12T21:40:31.454Z",
-              "duration": 1139,
+              "startTime": "2025-07-13T07:34:06.511Z",
+              "duration": 5605,
               "snippet": " \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Check Availibility of the room\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m bookingPage\u001b[33m.\u001b[39mcheckavailibility(invalidBookingData)\u001b[33m;\u001b[39m",
               "steps": [
                 {
                   "title": "page.evaluate",
-                  "startTime": "2025-07-12T21:40:31.454Z",
-                  "duration": 14,
+                  "startTime": "2025-07-13T07:34:06.514Z",
+                  "duration": 87,
                   "snippet": " \u001b[90m 11 |\u001b[39m   \u001b[36masync\u001b[39m checkavailibility({ checkInDate\u001b[33m,\u001b[39m checkOutDate }) {\n \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 13 |\u001b[39m       \u001b[36mconst\u001b[39m inputs \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mquerySelectorAll(\u001b[32m\"input.form-control\"\u001b[39m)\u001b[33m;\u001b[39m",
                   "steps": [],
                   "location": {
@@ -80,8 +80,8 @@
                 },
                 {
                   "title": "locator.fill(input.form-control >> nth=0)",
-                  "startTime": "2025-07-12T21:40:31.469Z",
-                  "duration": 637,
+                  "startTime": "2025-07-13T07:34:06.603Z",
+                  "duration": 3388,
                   "snippet": " \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"input.form-control\"\u001b[39m)\u001b[33m.\u001b[39mnth(\u001b[35m0\u001b[39m)\u001b[33m.\u001b[39mfill(checkInDate)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                                                         ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"input.form-control\"\u001b[39m)\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mfill(checkOutDate)\u001b[33m;\u001b[39m",
                   "steps": [],
                   "location": {
@@ -92,8 +92,8 @@
                 },
                 {
                   "title": "locator.fill(input.form-control >> nth=1)",
-                  "startTime": "2025-07-12T21:40:32.107Z",
-                  "duration": 187,
+                  "startTime": "2025-07-13T07:34:09.994Z",
+                  "duration": 1586,
                   "snippet": " \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"input.form-control\"\u001b[39m)\u001b[33m.\u001b[39mnth(\u001b[35m0\u001b[39m)\u001b[33m.\u001b[39mfill(checkInDate)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"input.form-control\"\u001b[39m)\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mfill(checkOutDate)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                                                         ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 19 |\u001b[39m",
                   "steps": [],
                   "location": {
@@ -104,8 +104,8 @@
                 },
                 {
                   "title": "page.click(button.btn.btn-primary)",
-                  "startTime": "2025-07-12T21:40:32.294Z",
-                  "duration": 299,
+                  "startTime": "2025-07-13T07:34:11.583Z",
+                  "duration": 532,
                   "snippet": " \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m\"button.btn.btn-primary\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 21 |\u001b[39m   }",
                   "steps": [],
                   "location": {
@@ -123,14 +123,14 @@
             },
             {
               "title": "Booke first Available room",
-              "startTime": "2025-07-12T21:40:32.593Z",
-              "duration": 668,
+              "startTime": "2025-07-13T07:34:12.116Z",
+              "duration": 1154,
               "snippet": " \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Booke first Available room\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m bookingPage\u001b[33m.\u001b[39mbookFirstRoom()\u001b[33m;\u001b[39m",
               "steps": [
                 {
                   "title": "locator.click(text=Book now >> nth=1)",
-                  "startTime": "2025-07-12T21:40:32.593Z",
-                  "duration": 668,
+                  "startTime": "2025-07-13T07:34:12.118Z",
+                  "duration": 1152,
                   "snippet": " \u001b[90m 37 |\u001b[39m   \u001b[36masync\u001b[39m bookFirstRoom() {\n \u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"text=Book now\"\u001b[39m)\u001b[33m.\u001b[39mnth(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                                                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 39 |\u001b[39m   }",
                   "steps": [],
                   "location": {
@@ -148,14 +148,14 @@
             },
             {
               "title": "Click Reserve now button",
-              "startTime": "2025-07-12T21:40:33.261Z",
-              "duration": 646,
+              "startTime": "2025-07-13T07:34:13.271Z",
+              "duration": 3205,
               "snippet": " \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Click Reserve now button\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m bookingPage\u001b[33m.\u001b[39mreservenow()\u001b[33m;\u001b[39m",
               "steps": [
                 {
                   "title": "page.click(text=Reserve Now)",
-                  "startTime": "2025-07-12T21:40:33.262Z",
-                  "duration": 644,
+                  "startTime": "2025-07-13T07:34:13.272Z",
+                  "duration": 3202,
                   "snippet": " \u001b[90m 41 |\u001b[39m   \u001b[36masync\u001b[39m reservenow() {\n \u001b[90m 42 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Reserve Now\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 43 |\u001b[39m   }",
                   "steps": [],
                   "location": {
@@ -173,14 +173,14 @@
             },
             {
               "title": "Fill Invalid Booking Form",
-              "startTime": "2025-07-12T21:40:33.907Z",
-              "duration": 212,
+              "startTime": "2025-07-13T07:34:16.477Z",
+              "duration": 1763,
               "snippet": " \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m   \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Fill Invalid Booking Form\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m bookingPage\u001b[33m.\u001b[39mfillBookingFormInvalidData(invalidBookingData)\u001b[33m;\u001b[39m",
               "steps": [
                 {
                   "title": "page.fill(input[name=\"firstname\"])",
-                  "startTime": "2025-07-12T21:40:33.908Z",
-                  "duration": 24,
+                  "startTime": "2025-07-13T07:34:16.479Z",
+                  "duration": 396,
                   "snippet": " \u001b[90m 23 |\u001b[39m   \u001b[36masync\u001b[39m fillBookingFormInvalidData({firstname\u001b[33m,\u001b[39m lastname\u001b[33m,\u001b[39m email\u001b[33m,\u001b[39m phoneInvalid\u001b[33m,\u001b[39m}) {\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"firstname\"]'\u001b[39m\u001b[33m,\u001b[39m firstname)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"lastname\"]'\u001b[39m\u001b[33m,\u001b[39m lastname)\u001b[33m;\u001b[39m",
                   "steps": [],
                   "location": {
@@ -191,8 +191,8 @@
                 },
                 {
                   "title": "page.fill(input[name=\"lastname\"])",
-                  "startTime": "2025-07-12T21:40:33.933Z",
-                  "duration": 45,
+                  "startTime": "2025-07-13T07:34:16.880Z",
+                  "duration": 383,
                   "snippet": " \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"firstname\"]'\u001b[39m\u001b[33m,\u001b[39m firstname)\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"lastname\"]'\u001b[39m\u001b[33m,\u001b[39m lastname)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"email\"]'\u001b[39m\u001b[33m,\u001b[39m email)\u001b[33m;\u001b[39m",
                   "steps": [],
                   "location": {
@@ -203,8 +203,8 @@
                 },
                 {
                   "title": "page.fill(input[name=\"email\"])",
-                  "startTime": "2025-07-12T21:40:33.979Z",
-                  "duration": 76,
+                  "startTime": "2025-07-13T07:34:17.267Z",
+                  "duration": 331,
                   "snippet": " \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"lastname\"]'\u001b[39m\u001b[33m,\u001b[39m lastname)\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"email\"]'\u001b[39m\u001b[33m,\u001b[39m email)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"phone\"]'\u001b[39m\u001b[33m,\u001b[39m phoneInvalid)\u001b[33m;\u001b[39m",
                   "steps": [],
                   "location": {
@@ -215,8 +215,8 @@
                 },
                 {
                   "title": "page.fill(input[name=\"phone\"])",
-                  "startTime": "2025-07-12T21:40:34.056Z",
-                  "duration": 63,
+                  "startTime": "2025-07-13T07:34:17.599Z",
+                  "duration": 641,
                   "snippet": " \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"email\"]'\u001b[39m\u001b[33m,\u001b[39m email)\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[32m'input[name=\"phone\"]'\u001b[39m\u001b[33m,\u001b[39m phoneInvalid)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 28 |\u001b[39m   }",
                   "steps": [],
                   "location": {
@@ -234,14 +234,14 @@
             },
             {
               "title": "Click Reserve now",
-              "startTime": "2025-07-12T21:40:34.119Z",
-              "duration": 238,
+              "startTime": "2025-07-13T07:34:18.241Z",
+              "duration": 503,
               "snippet": " \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Click Reserve now\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m bookingPage\u001b[33m.\u001b[39mreservenow()\u001b[33m;\u001b[39m",
               "steps": [
                 {
                   "title": "page.click(text=Reserve Now)",
-                  "startTime": "2025-07-12T21:40:34.119Z",
-                  "duration": 238,
+                  "startTime": "2025-07-13T07:34:18.243Z",
+                  "duration": 500,
                   "snippet": " \u001b[90m 41 |\u001b[39m   \u001b[36masync\u001b[39m reservenow() {\n \u001b[90m 42 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Reserve Now\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                    ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 43 |\u001b[39m   }",
                   "steps": [],
                   "location": {
@@ -259,14 +259,14 @@
             },
             {
               "title": "Validate error message is displayed",
-              "startTime": "2025-07-12T21:40:34.357Z",
-              "duration": 364,
+              "startTime": "2025-07-13T07:34:18.744Z",
+              "duration": 280,
               "snippet": " \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m   \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m\"Validate error message is displayed\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 33 |\u001b[39m     \u001b[36mawait\u001b[39m bookingPage\u001b[33m.\u001b[39massertBookingFail()\u001b[33m;\u001b[39m",
               "steps": [
                 {
                   "title": "expect.toBeVisible",
-                  "startTime": "2025-07-12T21:40:34.358Z",
-                  "duration": 362,
+                  "startTime": "2025-07-13T07:34:18.746Z",
+                  "duration": 278,
                   "snippet": " \u001b[90m 53 |\u001b[39m       \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m`text=${invalidBookingData.failureMessage}`\u001b[39m)\n \u001b[90m 54 |\u001b[39m     )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m      ^\u001b[22m\u001b[39m\u001b[0m\n \u001b[90m 55 |\u001b[39m   }",
                   "steps": [],
                   "location": {
@@ -284,13 +284,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2025-07-12T21:40:34.721Z",
-              "duration": 142,
+              "startTime": "2025-07-13T07:34:19.024Z",
+              "duration": 505,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2025-07-12T21:40:34.836Z",
-                  "duration": 26,
+                  "startTime": "2025-07-13T07:34:19.382Z",
+                  "duration": 144,
                   "steps": []
                 }
               ]
