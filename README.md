@@ -12,7 +12,7 @@ npm init playwright@latest
 
 3) Run the test using following commands ; There are total 5 tests. 3 for functional test and 2 for non-functional test.
 	
-	3.1) To run all test cases and generate repot in html:
+	3.1) To run all test cases and generate report in html:
 
 			npx playwright test --reporter=html
 
